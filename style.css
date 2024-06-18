@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --Soft-Blue: hsl(231, 69%, 60%);
+    --Soft-Red: hsl(0, 94%, 66%);
+    --Grayish-Blue: hsl(229, 8%, 60%);
+    --Very-Dark-Blue: hsl(229, 31%, 21%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 120px;
+}
+.nav > img {
+    margin: auto 0;
+}
+.nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+}
+.nav > ul > li:hover{
+ color: var(--Soft-Red);
+ transition: 0.3s;
+ cursor: pointer;
+}
+ul > button {
+    padding: 10px;
+    width: 100px;
+    text-transform: uppercase;
+    background-color: var(--Soft-Red);
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+ul > button:hover{
+    border:1px solid var(--Soft-Red);
+    cursor: pointer;
+    color: var(--Soft-Red);
+    background-color: transparent;
+    transition: 0.3s;
+}
+.burger{
+    display: none;
+}
+/* section 1  */
+.first{
+    display: flex;
+    padding: 20px 120px;
+}
+.first > .left {
+    width: 60%;
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+}
+.left > h1{
+    width: 400px;
+    font-weight: light;
+    font-size: 40px;
+}
+.left > p{
+    padding: 20px 0;
+    color: var(--Grayish-Blue);
+    width: 450px;
+    line-height: 25px;
+}
+.left > .btn > button{
+    padding: 15px 20px;
+    font-weight: 500;
+}
+.left > .btn > .btn-1{
+    color: white;
+    background-color: var(--Soft-Blue);
+    border: none;
+    border-radius: 5px;
+}
+.left> .btn >.btn-1:hover{
+    border:1px solid var(--Soft-Blue);
+    cursor: pointer;
+    color: var(--Soft-Blue);
+    background-color: transparent;
+    transition: 0.3s;
+}
+.left > .btn > .btn-2:hover{
+    border:1px solid var(--Grayish-Blue);
+    cursor: pointer;
+    color: var(--Grayish-Blue);
+    background-color: transparent;
+    transition: 0.3s;
+}
+.left > .btn > .btn-2{
+    color: var(--Very-Dark-Blue);
+    background-color: rgb(233, 232, 232);
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.first > .right{
+    width: 40%; 
+    position: relative;
+}
+.right > .bg{
+    background-color: var(--Soft-Blue);
+    position: absolute;
+    width: 100%;
+    height: 260px;
+    left: 120px;
+    z-index: -1;
+    top: 120px;
+    border-bottom-left-radius: 100px;
+}
+.right > img{
+    width: 500px;
+    
+}
+.feature {
+    text-align: center;
+    padding: 40px 0;
+}
+.feature > h2{
+    color: var(--Very-Dark-Blue);
+}
+.feature > p{
+   color: var(--Grayish-Blue);
+   text-align: center;
+   width: 500px;
+   margin: 10px auto;
+   line-height: 25px;
+}
+.tab-title {
+    margin:  auto ;
+   text-align: center;
+   justify-content: center;
+    gap: 100px;
+    display: flex;
+}
+hr{
+    width: 700px;
+    margin:20px auto;
+    opacity: 0.4;
+}
+/* animation  */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.tab{
+    display: none;
+    padding: 60px 120px;
+    gap: 120px;
+    animation: fadeIn 1s ease-in-out;
+}
+.tab-title > .tab-button{
+    cursor: pointer;
+}
+.tab-title > .tab-button:hover{
+    color: var(--Soft-Red);
+    transition: 0.3s;
+}
+.inactive-tab{
+    color: var(--Grayish-Blue);
+}
+.active-tab{
+    color: var(--Very-Dark-Blue)
+}
+/* display  tabs 1  */
+.tab > .left-1{
+    width: 50%;
+    position: relative;
+}
+.left-1 > img{
+    width: 450px;
+}
+.left-1 > .bg-1{
+    background-color: var(--Soft-Blue);
+    position: absolute;
+    width: 100%;
+    height: 260px;
+    right: 120px;
+    z-index: -1;
+    top: 140px;
+    border-bottom-right-radius: 100px;
+}
+
+.tab > .right-1{
+    width: 50%;
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+}
+.right-1 > h2{
+    color: var(--Very-Dark-Blue);
+}
+.right-1 > p{
+    color: var(--Grayish-Blue);
+    padding: 20px 0;
+    width: 400px;
+    line-height: 25px;
+}
+.right-1 > button{
+    width: 100px;
+    padding: 10px;
+    color: white;
+    background-color: var(--Soft-Blue);
+    border-radius: 5px;
+    border: none;
+}
+.box-all > button:hover{
+    border:1px solid var(--Soft-Blue);
+    cursor: pointer;
+    color: var(--Soft-Blue);
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+/* extension part  */
+.extension {
+    padding: 200px 0 50px 0;
+}
+.extension > h1 {
+    font-size: 30px;
+}
+/* 3 box  */
+.box{
+    padding: 20px 120px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.box > .box-all{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    height: 340px;
+    border-radius: 10px;
+}
+.box-all > h2 {
+    padding-top: 30px;
+    color: var(--Very-Dark-Blue);
+}
+.box-all > p{
+    color: var(--Grayish-Blue);
+    padding: 10px 0 20px 0;
+}
+.box-all > button{
+    margin: 10px 0;
+    width: 90%;
+    padding: 15px;
+    color: white;
+    background-color: var(--Soft-Blue);
+    border: none;
+    border-radius: 5px;
+}
+.box > .firefox {
+    margin-top: 20px;
+}
+.box > .opera {
+    margin-top: 40px;
+}
+/* question  */
+.question {
+    padding: 150px 0 50px 0;
+}
+.question > h1 {
+    font-size: 30px;
+}
+
+/* faq  */
+.faq{
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+    display: flex;
+    
+}
+.faq > .wrap {
+    padding: 20px 0;
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+    width: 90%;
+}
+.wrap > .answer{
+    display: none;
+    padding-top: 20px;
+    line-height: 30px;
+    color: var(--Grayish-Blue);
+}
+.faq > .wrap > .ask {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.faq > .wrap > .ask:hover p {
+    color: var(--Soft-Red);
+}
+.ask > span> .fa-solid{
+    display: none;
+}
+.info {
+    background-color: var(--Soft-Blue);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+}
+/* blue background  */
+.blue{
+    background-color: var(--Soft-Blue);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  padding: 50px;
+  color: white;
+}
+.blue > p {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+.blue > h1 {
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: 500;
+}
+.blue > .email > .email-input > input {
+    padding: 10px ;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+   
+}
+.blue > .email > .email-input{
+    /* background-color: var(--Soft-Red); */
+    /* border: 1px solid var(--Soft-Red); */
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    /* padding: 1px; */
+   
+}
+#icon-error{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: none;
+}
+#message {
+    padding: 5px 0px;
+    font-size: 10px;
+    position: absolute;
+    background-color: var(--Soft-Red);
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    border: 2px solid var(--Soft-Red);
+    display: none;
+}
+.blue > .email{
+    gap: 10px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.blue > .email > .email-input > input::placeholder {
+    color: rgb(192, 192, 192);
+    font-size: 12px;
+}
+.blue > .email > button {
+    background-color: var(--Soft-Red);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+.blue > .email > button:hover {
+    border:1px solid var(--Soft-Red);
+    cursor: pointer;
+    color: var(--Soft-Red);
+    background-color: white;
+    transition: 0.3s;
+}
+/* FOOTER */
+footer{
+    background-color: var(--Very-Dark-Blue);
+    padding: 40px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+footer > .ul-1 {
+    display: flex;
+    color: white;
+    list-style: none;
+    gap: 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+}
+footer > .ul-1 > li:hover{
+    color: var(--Soft-Red);
+ transition: 0.3s;
+ cursor: pointer;
+}
+footer > .ul-2{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.nav > .shut , .menu > .row, .menu > .mobile-symbol, .nav > .mobile-brand,
+.tab-title > .tab-mobile{
+    display: none;
+}
+@media screen and (max-width:1180px){
+    .first > .right{
+        width: 40%; 
+        position: relative;
+    }
+    .right > .bg{
+        background-color: var(--Soft-Blue);
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        left: 120px;
+        z-index: -1;
+        top: 120px;
+        border-bottom-left-radius: 100px;
+    }
+    .right > img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1100px){
+    /* box  */
+    .box > .box-all{
+        height: 300px;
+        padding: 30px 0px;
+    }
+    .box{
+        gap: 10px;
+        padding: 20px 60px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .box-all > .logo {
+        width: 50px;
+    }
+    .box-all > button{
+        width: 60%;
+    }
+}
+@media screen and (max-width:1000px){
+    .right > .bg{
+        
+        width: 100%;
+        height: 200px;
+        left: 100px;
+        
+        top: 120px;
+        border-bottom-left-radius: 100px;
+    }
+    .left-1 > img{
+        width: 350px;
+    }
+    .left-1 > .bg-1{
+        background-color: var(--Soft-Blue);
+        position: absolute;
+        width: 100%;
+        height: 260px;
+        right: 120px;
+        z-index: -1;
+        top: 140px;
+        border-bottom-right-radius: 100px;
+    }
+    .tab{
+        flex-direction: column;
+        padding: 60px 60px 20px 60px;
+    }
+   
+    .tab > .right-1, .tab > .left-1{
+        width: 100%;
+        justify-content: center;
+        /* align-items: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-1 > .bg-1{
+        background-color: var(--Soft-Blue);
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        right: 120px;
+        z-index: -1;
+        top: 140px;
+        border-bottom-right-radius: 100px;
+    }
+    .box{
+        flex-direction: column;
+        
+    }
+    .box > .box-all{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 30px 0px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+        height: 340px;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width:940px){
+    .first{
+        flex-direction: column-reverse;
+    }
+    .first > .left , .first > .right{
+    width: 100%;
+    justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+    }
+}
+@media screen and (max-width:780px){
+    .right > .bg{
+        
+        width: 100%;
+        height: 160px;
+        left: 40px;
+        
+        top: 120px;
+        border-bottom-left-radius: 100px;
+    }
+    .blue > h1{
+     font-size: 24px;
+    }
+    .first{
+        padding: 20px 40px;
+    }
+    .nav{
+        padding: 40px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .ul-1{
+        flex-direction: column;
+    }
+    .ul-2{
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .nav > .menu{
+        display: none;
+        padding-top: 60px;
+        opacity: 90%;
+        position: fixed;
+        background-color: var(--Very-Dark-Blue);
+        top: 0;
+        right: 0;       
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        z-index: 1;
+        color: white;
+        letter-spacing: 5px;
+        
+    }
+    .nav > .mobile-brand{
+        z-index: 100;
+        display: none;
+    }
+    .nav > .shut {
+        z-index: 100;
+        display: flex;
+    }
+    .menu > button{
+        letter-spacing: 5px;
+        width: 90%;
+        background-color: transparent;
+        border: 2px solid white;
+    }
+   .burger {
+        display: flex;
+    }
+    .menu > .row {
+        margin: -10px 0;
+        display: flex;
+        width: 90%;
+    }
+    .menu > .mobile-symbol{
+        display: flex;
+        gap: 40px;
+    }
+    .tab-title{
+        flex-direction: column;
+        margin: 60px 0;
+    }
+    .tab-pc {
+        display: none;
+    }
+    .tab-title > .tab-mobile{
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: -70px auto;
+        display: flex;
+    }
+    .left > .btn{
+        display: flex;
+    }
+    .question > p , .feature > p, .left > p, .left > h1{
+        width: auto;
+     }
+     .question > p , .feature > p{
+        padding: 0 40px;
+     }
+}
+@media screen and (max-width:500px){
+    .question > p , .feature > p, .left > p{
+        font-size: 12px;
+     }
+    .left > h1{
+        font-size: 25px;
+    }
+    .blue{
+        padding: 50px 20px;
+    }
+    .first > .left {
+        margin-top: 100px;
+    }
+    .first{
+        padding: 20px;
+    }
+    .left-1 > img{
+        width: 250px;
+        height: auto;
+    }
+    .tab > .right-1{
+       margin-top: 40px;
+    }
+    .right-1 > p{
+        width: auto;
+    }
+    .right > .bg{
+        left: 20px;
+    }
+    .left-1 > .bg-1{
+        background-color: var(--Soft-Blue);
+        position: absolute;
+        width: 100%;
+        height: 140px;
+        right: 120px;
+        z-index: -1;
+        top: 60px;
+        border-bottom-right-radius: 100px;
+    }
+    .box{
+        padding: 20px;
+    }
+    .box > .box-all{
+        height: 300px;
+    }
+    .box > .box-all > div > .dot {
+        width: 200px;
+    }
+    .blue > .email{
+        flex-direction: column;
+    }
+    .email > #contact , .blue > .email > .email-input > input {
+        width: 80%;
+    }
+    .blue > .email{
+        gap: 10px;
+        display: flex;
+        margin: 0;
+        justify-content: left;
+        align-items: normal;
+    }
+    .email > #contact{
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .feature > h1 {
+        font-size: 25px;
+    }
+}
